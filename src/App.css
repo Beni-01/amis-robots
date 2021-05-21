@@ -1,0 +1,110 @@
+body::-webkit-scrollbar {
+  width: 0.7em;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #df504b;
+  border-radius: 20px;
+}
+
+body {
+  font-family: "Roboto regular" !important;
+}
+.margin-left {
+  margin-left: 10px;
+}
+.navbar-brand {
+  height: auto;
+}
+.active {
+  color: black !important;
+}
+.outline-btn {
+  border: 2px solid white;
+  color: white;
+}
+.text-deco-none {
+  text-decoration: none;
+}
+.btn-detail {
+  appearance: none;
+  background-color: transparent;
+  color: white;
+  width: 50%;
+  border: 1px solid white;
+}
+
+.text-banner {
+  width: 80%;
+  text-align: center;
+
+  z-index: 3 !important;
+  margin: 8% auto auto auto !important;
+}
+
+.radius-none {
+  border-radius: 0 !important;
+}
+
+.bg-color-category {
+  background-color: rgba(20, 20, 20);
+}
+.bg-color-footer {
+  background-color: rgba(20, 20, 20);
+  color: white;
+}
+
+.bg-color-footer hr {
+  width: 35%;
+  padding: 2px;
+  opacity: 1;
+}
+
+.bg-color-footer p {
+  font-size: 18px;
+  width: 95%;
+  text-align: justify;
+}
+
+.bg-requirement {
+  background-color: rgba(25, 25, 25);
+}
+.dark-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(5, 5, 5, 0.7);
+  z-index: 2 !important;
+}
+.outline-btn-danger {
+  border: 2px solid #de4c46;
+  color: #de4c46;
+  font-size: 18px;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.padding-3 {
+  padding: 1%;
+}
+.b-left {
+  border-left: 4px solid #de4c46;
+  padding-left: 12px;
+}
+
+.img-style-film {
+  border-radius: 45px 0 45px 0;
+  border: 2px solid #de4c46;
+}
+
+.img-style-serie {
+  border-radius: 45px 45px 45px 45px;
+}
+.bg-style-details {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  opacity: 1 !important;
+  padding: 5%;
+  border-radius: 46px;
+}
