@@ -10,19 +10,17 @@ export const Layout = (props) => {
       <section className="container-fluid ">
         <div className="row">
           <div className="col-12 mt-5">
-            <div className="container ">
-              <div className="row justify-content-center">
-                {allRobots.map(({ id, name, username, email }) => (
-                  <CardRobot
-                    key={id}
-                    image={`https://robohash.org/${id}`}
-                    cardClass="img-fluid"
-                    name={name}
-                    username={username}
-                    email={email}
-                  />
-                ))}
-              </div>
+            <div className="row justify-content-center">
+              {allRobots.map(({ id, name, username, email }) => (
+                <CardRobot
+                  key={id}
+                  image={`https://robohash.org/${id}`}
+                  cardClass="img-fluid"
+                  name={name}
+                  username={username}
+                  email={email}
+                />
+              ))}
             </div>
           </div>
         </div>
