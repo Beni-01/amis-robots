@@ -1,11 +1,20 @@
+@font-face {
+  font-family: "sega";
+  src: url(SEGA.TTF);
+}
+
 body::-webkit-scrollbar {
   width: 0.7em;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: #df504b;
+  background-color: #082154;
   border-radius: 20px;
 }
 
+h1 {
+  font-family: "sega";
+  color: #40e4fa;
+}
 body {
   background: linear-gradient(130deg, #327179, #082154);
   background-repeat: no-repeat;
@@ -16,7 +25,7 @@ body {
 }
 
 .card {
-  background-color: #9eebcf;
+  background-color: #40e4fa;
 }
 
 .radius-30 {
