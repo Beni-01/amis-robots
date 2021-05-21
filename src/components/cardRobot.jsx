@@ -12,6 +12,10 @@ export const CardRobot = ({ image, name, username, cardClass, email }) => {
         <h6 className="text-dark text-center mt-1">{email}</h6>
 
         <button className="btn-info btn text-white p-2 ">Details</button>
+        <button className="btn-info btn text-white p-2 mt-2 ">Modifier</button>
+        <button className="btn-danger btn text-white p-2 mt-2 ">
+          Supprimer
+        </button>
       </div>
     </>
   );
