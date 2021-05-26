@@ -3,7 +3,7 @@ import { useRobot } from "./useFetchRobots";
 import { CardRobot } from "./cardRobot";
 
 export const Layout = (props) => {
-  const [allRobots] = useRobot("https://jsonplaceholder.typicode.com/users");
+  const [robots] = useRobot("https://jsonplaceholder.typicode.com/users");
 
   return (
     <>
@@ -11,14 +11,14 @@ export const Layout = (props) => {
         <div className="row">
           <div className="col-12 mt-5">
             <div className="row justify-content-center">
-              {allRobots.map(({ id, name, username, email }) => (
+              {robots.map(({ id, name, email, index }) => (
                 <CardRobot
                   key={id}
                   image={`https://robohash.org/${id}`}
                   cardClass="img-fluid"
                   name={name}
-                  username={username}
                   email={email}
+                  id={id}
                 />
               ))}
             </div>

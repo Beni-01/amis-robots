@@ -19,6 +19,7 @@ body {
   background: linear-gradient(130deg, #327179, #082154);
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 .margin-left {
   margin-left: 10px;
