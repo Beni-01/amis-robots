@@ -1,21 +1,21 @@
 import React from "react";
 
-export const InputConponent = ({ children, placeholder, icon }) => {
+export const InputConponent = ({ handleChange }) => {
+  const handleSearch = (e) => {
+    handleChange(e.target.value);
+  };
   return (
     <>
       <form className="container">
-        <div className="row justify-content-center mt-5">
-          <div className="col-md-7  col-12 mt-5 ">
+        <div className="row justify-content-center ">
+          <div className="col-md-5  col-12 mt-5 ">
             <div className="input-group input-group-addon">
-              <label className="sr-only">{children}</label>
               <input
                 type="text"
-                className="form-control form-control-lg p-2 radius-none"
-                placeholder={placeholder}
+                className="form-control form-control-lg p-3 radius-none"
+                placeholder="saisie le nom du robot ici"
+                onChange={handleSearch}
               />
-              <button className="btn btn-danger radius-none btn-lg p-2">
-                <i className={icon}></i>
-              </button>
             </div>
           </div>
         </div>
