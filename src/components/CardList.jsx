@@ -51,7 +51,7 @@ export const Layout = (props) => {
             {!isClicked ? (
             <InputConponent handleChange={handleChange} />
           ) : (
-            <h2 className="text-center mt-5">DETAILS SUR MON AMIS</h2>
+            <h2 className="text-center mt-5">DETAILS SUR MON AMI</h2>
           )}
           
           <div className="col-12 mt-5">
