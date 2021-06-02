@@ -14,7 +14,7 @@ export const CardRobot = ({
   return (
     <>
       <div
-        className="col-md-2 col-9 my-3 p-2 margin-left text-center card  "
+        className="col-md-2 col-9 my-3 p-2 margin-left text-center card cursor-pointer "
         onClick={handleClick}
       >
         <img src={image} className={cardClass} alt={name} />
