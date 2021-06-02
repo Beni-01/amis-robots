@@ -18,8 +18,8 @@ export const CardRobot = ({
         onClick={handleClick}
         title="Clquer pour voir plus de details"
       >
-        <img src={image} className={cardClass} alt={name} />
-        <h4 className="text-dark text-center mt-2" title="Clquer pour voir plus de details">
+        <img src={image} className={cardClass} alt={name} title="Clquer pour voir plus de details"/>
+        <h4 className="text-dark text-center mt-2" >
           <span>{name}</span>
         </h4>
         <h6 className="text-dark text-center mt-1">{email}</h6>
