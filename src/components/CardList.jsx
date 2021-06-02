@@ -45,6 +45,7 @@ export const Layout = (props) => {
 
   return (
     <>
+    {window.scrollTo(0,0)}
       <section className="container-fluid ">
         <div className="row">
           <InputConponent handleChange={handleChange} />
