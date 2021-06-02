@@ -21,6 +21,10 @@ body {
   background-size: cover;
   min-height: 100vh;
 }
+
+.font-s {
+  font-size: 20px;
+}
 .margin-left {
   margin-left: 10px;
 }

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CardRobot } from "./cardRobot";
+import { CardRobotDetails } from "./CardRobotDetails";
 import { InputConponent } from "./InputConponent";
 
 export const Layout = (props) => {
@@ -7,6 +8,8 @@ export const Layout = (props) => {
 
   const [robots, setRobots] = useState([]);
   const [tempoRobot, setTempRobot] = useState([]);
+  const [isClicked, setIsClicked] = useState(false);
+  const [show, setShow] = useState([]);
   useEffect(() => {
     (async function () {
       const response = await fetch(url);
@@ -25,7 +28,19 @@ export const Layout = (props) => {
       name.includes(value)
     );
     setRobots(filteredRobots);
-    console.log(value);
+  };
+
+  console.log(tempoRobot);
+
+  const handleShowDetails = (idRobot) => {
+    // eslint-disable-next-line eqeqeq
+    const filteredRobot = tempoRobot.filter(({ id }) => id === idRobot);
+    setShow(filteredRobot);
+    setIsClicked(true);
+  };
+
+  const handleHideDetails = () => {
+    setIsClicked(false);
   };
 
   return (
@@ -35,16 +50,25 @@ export const Layout = (props) => {
           <InputConponent handleChange={handleChange} />
           <div className="col-12 mt-5">
             <div className="row justify-content-center">
-              {robots.map(({ id, name, email, index }) => (
-                <CardRobot
-                  key={id}
-                  image={`https://robohash.org/${id}`}
+              {!isClicked ? (
+                robots.map(({ id, name, email }) => (
+                  <CardRobot
+                    key={id}
+                    image={`https://robohash.org/${id}`}
+                    cardClass="img-fluid"
+                    name={name}
+                    email={email}
+                    id={id}
+                    handleShowDetails={handleShowDetails}
+                  />
+                ))
+              ) : (
+                <CardRobotDetails
+                  item={show}
                   cardClass="img-fluid"
-                  name={name}
-                  email={email}
-                  id={id}
+                  handleHideDetails={handleHideDetails}
                 />
-              ))}
+              )}
             </div>
           </div>
         </div>
