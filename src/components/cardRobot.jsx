@@ -23,6 +23,9 @@ export const CardRobot = ({
           <span>{name}</span>
         </h4>
         <h6 className="text-dark text-center mt-1">{email}</h6>
+        <button className="btn btn-success d-md-none text-white">
+          VOIR PLUS
+        </button>
       </div>
     </>
   );
