@@ -48,7 +48,11 @@ export const Layout = (props) => {
     {window.scrollTo(0,0)}
       <section className="container-fluid ">
         <div className="row">
-          {!ifClicked?(<InputConponent handleChange={handleChange} />)}
+            {!isClicked ? (
+            <InputConponent handleChange={handleChange} />
+          ) : (
+            <h2 className="text-center mt-5">DETAILS SUR MON AMIS</h2>
+          )}
           
           <div className="col-12 mt-5">
             <div className="row justify-content-center">
