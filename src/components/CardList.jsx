@@ -40,6 +40,7 @@ export const Layout = (props) => {
   };
 
   const handleHideDetails = () => {
+  setRobots(tempoRobot);
     setIsClicked(false);
   };
 
